@@ -10,18 +10,34 @@
         <!--To Do List-->
         <scene sceneID="k05-KD-sQE">
             <objects>
-                <tableViewController id="gsx-gG-hIj" customClass="ToDoTableViewController" customModule="ToDoList" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="gsx-gG-hIj" customClass="ToDoTableViewController" customModule="To_Do_List" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="aIW-eB-W4W">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="9jG-n7-MHb">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" textLabel="82L-sx-Iby" detailTextLabel="ak2-fE-Zh8" style="IBUITableViewCellStyleValue1" id="9jG-n7-MHb">
+                                <rect key="frame" x="0.0" y="28" width="414" height="45.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9jG-n7-MHb" id="msj-An-dpw">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="45.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="82L-sx-Iby">
+                                            <rect key="frame" x="20" y="12" width="31.5" height="22.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ak2-fE-Zh8">
+                                            <rect key="frame" x="348.5" y="12" width="45.5" height="22.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -48,11 +64,17 @@
         <!--Complete To Do View Controller-->
         <scene sceneID="9Rd-lK-gE1">
             <objects>
-                <viewController id="spt-tM-f2P" customClass="CompleteToDoViewController" customModule="ToDoList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="spt-tM-f2P" customClass="CompleteToDoViewController" customModule="To_Do_List" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Gx-6Q-Xoc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DL8-6K-8RE">
+                                <rect key="frame" x="169" y="188" width="76" height="41"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNg-Fg-SLb">
                                 <rect key="frame" x="156.5" y="349" width="101" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -61,16 +83,18 @@
                                     <action selector="completeTapped:" destination="spt-tM-f2P" eventType="touchUpInside" id="tfZ-b5-9Da"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DL8-6K-8RE">
-                                <rect key="frame" x="169" y="188" width="76" height="41"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Importance: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQd-c6-byd">
+                                <rect key="frame" x="134.5" y="269" width="145" height="33"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="YQd-c6-byd" firstAttribute="top" secondItem="DL8-6K-8RE" secondAttribute="bottom" constant="40" id="RV6-u2-hJw"/>
                             <constraint firstItem="DL8-6K-8RE" firstAttribute="centerX" secondItem="6Gx-6Q-Xoc" secondAttribute="centerX" id="SaF-Vt-3zb"/>
+                            <constraint firstItem="YQd-c6-byd" firstAttribute="centerX" secondItem="6Gx-6Q-Xoc" secondAttribute="centerX" id="hgY-Bw-b7A"/>
                             <constraint firstItem="FNg-Fg-SLb" firstAttribute="centerX" secondItem="6Gx-6Q-Xoc" secondAttribute="centerX" id="lhb-e2-O4f"/>
                             <constraint firstItem="DL8-6K-8RE" firstAttribute="top" secondItem="fTE-HE-z4O" secondAttribute="top" constant="100" id="nXy-kw-bwH"/>
                             <constraint firstItem="FNg-Fg-SLb" firstAttribute="top" secondItem="DL8-6K-8RE" secondAttribute="bottom" constant="120" id="nwa-zf-Btb"/>
@@ -79,6 +103,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="gz2-Ak-mQq"/>
                     <connections>
+                        <outlet property="importanceLabel" destination="YQd-c6-byd" id="aDm-CD-tKl"/>
                         <outlet property="titleLabel" destination="DL8-6K-8RE" id="q7s-CE-QQH"/>
                     </connections>
                 </viewController>
@@ -89,7 +114,7 @@
         <!--Add To Do View Controller-->
         <scene sceneID="7ef-r7-g0I">
             <objects>
-                <viewController id="ICU-Ov-qKh" customClass="AddToDoViewController" customModule="ToDoList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ICU-Ov-qKh" customClass="AddToDoViewController" customModule="To_Do_List" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xvz-OY-H2S">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

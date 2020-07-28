@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FC68148D24CFC26B00FB0A90 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC68148D24CFC26B00FB0A90 /* To Do List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To Do List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC68149024CFC26B00FB0A90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC68149224CFC26B00FB0A90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FC68149724CFC26B00FB0A90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 		FC68148E24CFC26B00FB0A90 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FC68148D24CFC26B00FB0A90 /* ToDoList.app */,
+				FC68148D24CFC26B00FB0A90 /* To Do List.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,9 +82,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FC68148C24CFC26B00FB0A90 /* ToDoList */ = {
+		FC68148C24CFC26B00FB0A90 /* To Do List */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FC6814A424CFC26E00FB0A90 /* Build configuration list for PBXNativeTarget "ToDoList" */;
+			buildConfigurationList = FC6814A424CFC26E00FB0A90 /* Build configuration list for PBXNativeTarget "To Do List" */;
 			buildPhases = (
 				FC68148924CFC26B00FB0A90 /* Sources */,
 				FC68148A24CFC26B00FB0A90 /* Frameworks */,
@@ -94,9 +94,9 @@
 			);
 			dependencies = (
 			);
-			name = ToDoList;
+			name = "To Do List";
 			productName = ToDoList;
-			productReference = FC68148D24CFC26B00FB0A90 /* ToDoList.app */;
+			productReference = FC68148D24CFC26B00FB0A90 /* To Do List.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -127,7 +127,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FC68148C24CFC26B00FB0A90 /* ToDoList */,
+				FC68148C24CFC26B00FB0A90 /* To Do List */,
 			);
 		};
 /* End PBXProject section */
@@ -301,13 +301,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4629642ULT;
+				DEVELOPMENT_TEAM = S5NZ899562;
 				INFOPLIST_FILE = ToDoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = test.ToDoList;
+				PRODUCT_BUNDLE_IDENTIFIER = test.ToDoListLinda;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -319,13 +319,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4629642ULT;
+				DEVELOPMENT_TEAM = S5NZ899562;
 				INFOPLIST_FILE = ToDoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = test.ToDoList;
+				PRODUCT_BUNDLE_IDENTIFIER = test.ToDoListLinda;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -344,7 +344,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FC6814A424CFC26E00FB0A90 /* Build configuration list for PBXNativeTarget "ToDoList" */ = {
+		FC6814A424CFC26E00FB0A90 /* Build configuration list for PBXNativeTarget "To Do List" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FC6814A524CFC26E00FB0A90 /* Debug */,

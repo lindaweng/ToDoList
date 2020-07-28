@@ -14,11 +14,19 @@ class CompleteToDoViewController: UIViewController {
     var selectedToDo: ToDoCD?
     
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var importanceLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         titleLabel.text = selectedToDo?.name
+        if let important = selectedToDo?.important {
+            if important {
+                importanceLabel.text! = "Importance: ❗️"
+            } else {
+                importanceLabel.text = ""
+            }
+        }
         
     }
     
